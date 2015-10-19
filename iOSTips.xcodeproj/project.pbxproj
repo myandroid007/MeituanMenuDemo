@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		409D72901BD496D8009518D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D728F1BD496D8009518D1 /* AppDelegate.swift */; };
-		409D72921BD496D8009518D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D72911BD496D8009518D1 /* ViewController.swift */; };
 		409D72951BD496D8009518D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409D72931BD496D8009518D1 /* Main.storyboard */; };
 		409D72981BD496D8009518D1 /* iOSTips.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 409D72961BD496D8009518D1 /* iOSTips.xcdatamodeld */; };
 		409D729A1BD496D8009518D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409D72991BD496D8009518D1 /* Assets.xcassets */; };
 		409D729D1BD496D8009518D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409D729B1BD496D8009518D1 /* LaunchScreen.storyboard */; };
 		409D72A81BD496D8009518D1 /* iOSTipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D72A71BD496D8009518D1 /* iOSTipsTests.swift */; };
 		409D72B31BD496D8009518D1 /* iOSTipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D72B21BD496D8009518D1 /* iOSTipsUITests.swift */; };
+		409D72C61BD49913009518D1 /* MultiMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D72C51BD49913009518D1 /* MultiMenuViewController.swift */; };
+		409D72C81BD499B6009518D1 /* SubMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D72C71BD499B6009518D1 /* SubMenuViewController.swift */; };
+		409D72CA1BD4A2A2009518D1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D72C91BD4A2A2009518D1 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 /* Begin PBXFileReference section */
 		409D728C1BD496D8009518D1 /* iOSTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		409D728F1BD496D8009518D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		409D72911BD496D8009518D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		409D72941BD496D8009518D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		409D72971BD496D8009518D1 /* iOSTips.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSTips.xcdatamodel; sourceTree = "<group>"; };
 		409D72991BD496D8009518D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		409D72AE1BD496D8009518D1 /* iOSTipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTipsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		409D72B21BD496D8009518D1 /* iOSTipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTipsUITests.swift; sourceTree = "<group>"; };
 		409D72B41BD496D8009518D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		409D72C51BD49913009518D1 /* MultiMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiMenuViewController.swift; sourceTree = "<group>"; };
+		409D72C71BD499B6009518D1 /* SubMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.swift; sourceTree = "<group>"; };
+		409D72C91BD4A2A2009518D1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,12 @@
 		409D728E1BD496D8009518D1 /* iOSTips */ = {
 			isa = PBXGroup;
 			children = (
+				409D72C41BD4972F009518D1 /* View */,
+				409D72C31BD4971C009518D1 /* Util */,
+				409D72C21BD49712009518D1 /* Category */,
+				409D72C11BD4970D009518D1 /* Resource */,
+				409D72C01BD49701009518D1 /* ViewController */,
 				409D728F1BD496D8009518D1 /* AppDelegate.swift */,
-				409D72911BD496D8009518D1 /* ViewController.swift */,
 				409D72931BD496D8009518D1 /* Main.storyboard */,
 				409D72991BD496D8009518D1 /* Assets.xcassets */,
 				409D729B1BD496D8009518D1 /* LaunchScreen.storyboard */,
@@ -126,6 +134,44 @@
 				409D72B41BD496D8009518D1 /* Info.plist */,
 			);
 			path = iOSTipsUITests;
+			sourceTree = "<group>";
+		};
+		409D72C01BD49701009518D1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				409D72C51BD49913009518D1 /* MultiMenuViewController.swift */,
+				409D72C71BD499B6009518D1 /* SubMenuViewController.swift */,
+				409D72C91BD4A2A2009518D1 /* HomeViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		409D72C11BD4970D009518D1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		409D72C21BD49712009518D1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		409D72C31BD4971C009518D1 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		409D72C41BD4972F009518D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				409D72CA1BD4A2A2009518D1 /* HomeViewController.swift in Sources */,
+				409D72C81BD499B6009518D1 /* SubMenuViewController.swift in Sources */,
 				409D72981BD496D8009518D1 /* iOSTips.xcdatamodeld in Sources */,
-				409D72921BD496D8009518D1 /* ViewController.swift in Sources */,
 				409D72901BD496D8009518D1 /* AppDelegate.swift in Sources */,
+				409D72C61BD49913009518D1 /* MultiMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
